@@ -1,0 +1,63 @@
+.header{
+    text-align: center;
+}
+
+.button{
+    position: fixed;
+    left: 10px;
+    top: 20px;
+}
+
+#backtocv{
+    background-color: rgb(240, 245, 240);
+    font-size: 20px;
+    padding: 4px;
+}
+
+.tabs {
+	display: flex;
+	flex-wrap: wrap;
+}
+.tabs label {
+	order: 1; 
+	display: block;
+	padding: 1rem 2rem;
+	margin-right: 0.2rem;
+	cursor: pointer;
+  background: #bbb7a5;
+  font-weight: bold;
+
+}
+.tabs .tab {
+  order: 99; 
+  flex-grow: 1;
+	width: 100%;
+	display: none;
+  padding: 1rem;
+  background: rgb(178, 174, 174);
+}
+.tabs input[type="radio"] {
+	display: none;
+}
+.tabs input[type="radio"]:checked + label {
+	background: rgba(184, 173, 164, 0.388);
+}
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+
+/* style */
+body{
+    background-image:url("./landscape-1387468.jpg");
+    min-height: 100vhm;
+    box-sizing: border-box;
+    padding-top: 10vh;
+
+}
+
+.icon{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+
